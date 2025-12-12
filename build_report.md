@@ -367,6 +367,5 @@ These components are **stubbed for demo** but have **clear integration points** 
 
 ---
 
-**Built by:** Lovable AI  
 **Date:** 2025  
 **Status:** ✅ Ready for Demo & Production Planning

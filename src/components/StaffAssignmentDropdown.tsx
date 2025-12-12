@@ -51,12 +51,12 @@ export const StaffAssignmentDropdown = ({
     <Select value={currentStaffId || ''} onValueChange={handleSelect}>
       <SelectTrigger className={cn(
         "min-w-0",
-        size === 'sm' ? 'h-8 text-xs w-[120px]' : 'w-[160px]'
+        size === 'sm' ? 'h-8 text-xs w-auto min-w-[140px] max-w-[180px]' : 'w-[200px]'
       )}>
-        <div className="flex items-center gap-1 truncate overflow-hidden">
+        <div className="flex items-center gap-1.5 truncate overflow-hidden w-full">
           {showIcon && <UserPlus className="h-3 w-3 flex-shrink-0" />}
-          <span className="truncate">
-            {currentStaffId ? STAFF_LIST.find(s => s.id === currentStaffId)?.name?.split(' ')[0] || placeholder : placeholder}
+          <span className="truncate flex-1 text-left">
+            {currentStaffId ? STAFF_LIST.find(s => s.id === currentStaffId)?.name || placeholder : placeholder}
           </span>
         </div>
       </SelectTrigger>

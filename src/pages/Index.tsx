@@ -63,7 +63,7 @@ const Index = () => {
       </header>
 
       {/* Navigation Bar */}
-      <nav className="border-b border-nav-border bg-card sticky top-[95px] z-10 shadow-sm">
+      <nav className="border-b border-nav-border bg-card sticky top-[95px] z-50 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex gap-2">
             {[
